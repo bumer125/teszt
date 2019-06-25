@@ -17,7 +17,7 @@
 			$arr5=checkPassword(clearInput($_POST["pass1"]), clearInput($_POST["pass2"]));
 			$err5=$arr5[1];
 			
-			if($arr1[0]==true && $arr2[0]==true && $arr3[0]==true && $arr4[0]==true && $arr4[0]==true){
+			if($arr1[0]==true && $arr2[0]==true && $arr3[0]==true && $arr4[0]==true && $arr5[0]==true){
 				try{
 					$flag=true;
 					
@@ -57,6 +57,8 @@
 						$_SESSION["islog"]=true;
 						$_SESSION["username"]=$_POST["username"];
 						$_SESSION["email"]=$_POST["email"];
+						$_SESSION["pass1"]=$_POST["pass1"];
+						$_SESSION["pass2"]=$_POST["pass2"];
 						header("Location:mainpage.php");
 					}
 				}catch(PDOException $e){
