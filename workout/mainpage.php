@@ -7,7 +7,6 @@
 		session_destroy();
 		header("Location:index.php");
 	}
-	//echo $_SESSION["email"];
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -21,16 +20,34 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><!--import bootstrap-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script><!--import bootstrap-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script><!--import bootstrap-->
+		<script src="ajax.js"></script>
 		<style>
 			
 		</style>
 	</head>
 	<body>
-		<div class="jumbotron text-center">
+		<div class="jumbotron text-center" style="margin-bottom:0px">
 			<h1>Üdvözöllek a weboldalon <?php echo $_SESSION["username"]?>!</h1>
 		</div>
-		<nav class="navbar navbar-expand-sm bg-dark nav-dark">
-			
-		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 p-0">
+					<nav class="navbar bg-dark nav-dark" >
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="#" onclick='listDat("bodypart");' class="nav-link">Testrészek</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Gyakorlatok</a>
+							</li>
+						</ul>
+					</nav>
+				</div >
+				<div class="col-sm-10" style="background-color:blue">
+					<table id="maintable">
+					</table>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
