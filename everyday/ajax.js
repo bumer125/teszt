@@ -1,4 +1,4 @@
-
+//Ez egy komment
 $(document).ready(function(){
 	//Űrlap megjelenítés
 	$("#showData").on({
