@@ -35,10 +35,22 @@
 					<nav class="navbar bg-dark nav-dark" >
 						<ul class="navbar-nav">
 							<li class="nav-item">
+								<a href="#" class="nav-link">Teendők</a>
+							</li>
+							<li class="nav-item">
 								<a href="#" onclick='listDat("bodypart");' class="nav-link">Testrészek</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link">Gyakorlatok</a>
+								<a href="#" class="nav-link">Új testrész</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Új gyakorlat</a>
+							</li>
+							<li class="nav-item">
+								<a href="http://localhost/workout/index.php" class="nav-link">Kijelentkezés</a>
+							</li>
+							<li class="nav-item">
+								<a href="index.php" class="nav-link">Kijelentkezés</a>
 							</li>
 						</ul>
 					</nav>
